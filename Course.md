@@ -17,6 +17,7 @@ Examples:
 
 1. **Space Efficiency:** How much memory an algorithm needs to run.
 2. **Time Efficiency:** How much time An algorithm takes to finish. <br>
+
 ### **-> Importance:**
 - **Save Resources:** Less memory and time make programs run better.
 - **Handle Large Data:** Efficient algorithms can deal with big inputs without crashing or slowing down.
@@ -144,7 +145,151 @@ Examples:
 
 
 ## **•	The need of array query algorithms and their implications. Their applications and principles need to be discussed**
+**Need for Array Query Algorithms:** They allow efficient operations (like sum, min, max, or range queries) on arrays, optimizing performance and reducing computation time, especially for large datasets.
+
+### **Implications:**
+**- Improved Efficiency:** Faster query answers, reducing time complexity.<br>
+**- Real-time Processing:** Crucial for applications needing quick data access.<br>
+**- Memory Usage:** Some algorithms need extra space for optimization.<br>
+
+### **Applications:**
+**- Range Queries:** Sum, min, max queries on subarrays.<br>
+**- Dynamic Programming:** Storing results for fast access.<br>
+**- Computational Geometry:** Range-based geometric queries.<br>
+
+### **Principles:**
+**- Preprocessing:** Prepare data for quick querying.<br>
+**- Divide and Conquer:** Break problems into smaller parts.<br>
+**- Time vs Space Trade-off:** Optimizing time at the cost of extra space.<br>
+
 ## **•	Differentiate between tree and graphs and their traversals. The applications of each**
+
+### **-> Difference between Tree and Graph:**
+<table border="1">
+  <tr>
+    <th>Aspect</th>
+    <th>Tree</th>
+    <th>Graph</th>
+  </tr>
+  <tr>
+    <td><b>Definition</b></td>
+    <td>A tree is a hierarchical structure with a single root and no cycles.</td>
+    <td>A graph is a collection of nodes (vertices) connected by edges, and can have cycles.</td>
+  </tr>
+  <tr>
+    <td><b>Edges</b></td>
+    <td>Each node has at most one parent.</td>
+    <td>A node can have multiple edges (including self-loops).</td>
+  </tr>
+  <tr>
+    <td><b>Connections</b></td>
+    <td>Only one path exists between any two nodes.</td>
+    <td>Multiple paths can exist between nodes.</td>
+  </tr>
+  <tr>
+    <td><b>Cycle</b></td>
+    <td>No cycles.</td>
+    <td>Can have cycles (cyclic graph) or be acyclic (acyclic graph).</td>
+  </tr>
+  <tr>
+    <td><b>Root</b></td>
+    <td>Has one root node.</td>
+    <td>No specific root node (except in Directed Acyclic Graphs, DAGs).</td>
+  </tr>
+  <tr>
+    <td><b>Types</b></td>
+    <td>Binary Tree, AVL Tree, Binary Search Tree, etc.</td>
+    <td>Directed Graph, Undirected Graph, Weighted Graph, etc.</td>
+  </tr>
+</table>
+
+<br>
+
+### **-> Difference between their traversals:**
+<table border="1">
+  <tr>
+    <th>Traversal Type</th>
+    <th>Tree Traversals</th>
+    <th>Graph Traversals</th>
+  </tr>
+  <tr>
+    <td><b>Inorder Traversal</b></td>
+    <td>Left, Root, Right. Often used in Binary Search Trees to get sorted order.</td>
+    <td>Not applicable (used in tree-specific structure).</td>
+  </tr>
+  <tr>
+    <td><b>Preorder Traversal</b></td>
+    <td>Root, Left, Right. Used for creating a copy of a tree or pre-order processing.</td>
+    <td>Not applicable (used in tree-specific structure).</td>
+  </tr>
+  <tr>
+    <td><b>Postorder Traversal</b></td>
+    <td>Left, Right, Root. Used for deleting or freeing memory, or post-order evaluations.</td>
+    <td>Not applicable (used in tree-specific structure).</td>
+  </tr>
+  <tr>
+    <td><b>Level Order Traversal</b></td>
+    <td>Nodes are traversed level by level (implemented using a queue).</td>
+    <td>Not applicable (used in tree-specific structure).</td>
+  </tr>
+  <tr>
+    <td><b>Depth-First Search (DFS)</b></td>
+    <td>Not applicable (used in graph traversal).</td>
+    <td>Explores as far as possible down each branch before backtracking (used in tasks like cycle detection, pathfinding).</td>
+  </tr>
+  <tr>
+    <td><b>Breadth-First Search (BFS)</b></td>
+    <td>Not applicable (used in graph traversal).</td>
+    <td>Explores all neighbors level by level. Used for shortest path finding, network broadcasting.</td>
+  </tr>
+</table>
+
+<br>
+
+### **-> Applications of Tree and Graph:**
+<table border="1">
+  <tr>
+    <th>Application</th>
+    <th>Tree Applications</th>
+    <th>Graph Applications</th>
+  </tr>
+  <tr>
+    <td><b>Expression Representation</b></td>
+    <td>Expression trees represent mathematical expressions for evaluation.</td>
+    <td>Not typically used in expression representation.</td>
+  </tr>
+  <tr>
+    <td><b>Hierarchical Data</b></td>
+    <td>Used in organizational charts, file systems, or family trees.</td>
+    <td>Can represent complex relationships in networks, like social media or transport systems.</td>
+  </tr>
+  <tr>
+    <td><b>File Systems</b></td>
+    <td>File systems use tree structures to represent directories and files.</td>
+    <td>Graph representation can be used for more complex, non-hierarchical connections (like web links).</td>
+  </tr>
+  <tr>
+    <td><b>Database Indexing</b></td>
+    <td>Databases use tree structures like B-trees for fast searching and indexing.</td>
+    <td>Graphs are used for representing and querying relationships in databases (e.g., social graphs, RDF graphs).</td>
+  </tr>
+  <tr>
+    <td><b>Routing Algorithms</b></td>
+    <td>Not typically used in routing.</td>
+    <td>Used in network routing algorithms (e.g., Dijkstra’s for shortest path). Nodes are routers or network devices.</td>
+  </tr>
+  <tr>
+    <td><b>Social Networks</b></td>
+    <td>Not commonly used in social networks.</td>
+    <td>Nodes represent users, and edges represent relationships (e.g., friends, followers).</td>
+  </tr>
+  <tr>
+    <td><b>Pathfinding</b></td>
+    <td>Not commonly used for pathfinding.</td>
+    <td>Graphs are commonly used for pathfinding (e.g., GPS navigation, game AI).</td>
+  </tr>
+</table>
+
 ## **•	Deliberate on sorting and searching algorithms, the technique behind each and they connect to real world**
 ## **•	Discuss the importance of graph algorithms with respect to spanning trees and shortest paths**
 ## **•	Discuss about the different studied algorithm design techniques.**
