@@ -1,16 +1,16 @@
 •	What are the kinds of problems we see in the nature? (iteration, recursion, backtracking)
-1.	Iteration: Repeats a block of code over a sequence or until a condition is met. 
+1.	**Iteration:** Repeats a block of code over a sequence or until a condition is met. 
 Examples:
-	Calculating the sum of numbers in a list using a for loop.
-	Printing the first 10 Fibonacci numbers using a while loop.
-2.	Recursion: A function calls itself to solve smaller instances of the same problem until a base condition is met.
+- Calculating the sum of numbers in a list using a for loop.
+- Printing the first 10 Fibonacci numbers using a while loop.
+2.	**Recursion:** A function calls itself to solve smaller instances of the same problem until a base condition is met.
 Examples:
-	Calculating the factorial of a number (e.g., factorial(5) = 5 * factorial(4)).
-	Solving the Towers of Hanoi problem with multiple disks.
-3.	Backtracking: A technique to solve problems by exploring all possibilities and backtracking when a solution path fails.
+-	Calculating the factorial of a number (e.g., factorial(5) = 5 * factorial(4)).
+-	Solving the Towers of Hanoi problem with multiple disks.
+3.	**Backtracking:** A technique to solve problems by exploring all possibilities and backtracking when a solution path fails.
 Examples:
-	Solving a Sudoku puzzle by trying numbers in empty cells and reverting if they lead to a conflict.
-	Finding all paths in a maze by moving in possible directions and backtracking when hitting a dead end.
+-	Solving a Sudoku puzzle by trying numbers in empty cells and reverting if they lead to a conflict.
+-	Finding all paths in a maze by moving in possible directions and backtracking when hitting a dead end.
 
 •	What is space and time efficiency? Why are they important? Explain the different class of problems and orders of growth
 •	Take away from different design principles from chapter 2 (can use the notes provided)
