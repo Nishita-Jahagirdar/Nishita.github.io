@@ -291,5 +291,77 @@ Examples:
 </table>
 
 ## **•	Deliberate on sorting and searching algorithms, the technique behind each and they connect to real world**
+Sorting Algorithms
+Bubble Sort
+Description: Swaps adjacent elements until sorted.
+
+Complexity: O(n²)
+
+Use: Small datasets
+
+Insertion Sort
+Description: Builds the sorted list one element at a time.
+
+Complexity: O(n²)
+
+Use: Nearly sorted datasets
+
+Merge Sort
+Description: Divides and merges sublists.
+
+Complexity: O(n log n)
+
+Use: Large-scale data
+
+Quick Sort
+Description: Partitions around a pivot and sorts.
+
+Complexity: O(n log n) (average)
+
+Use: General-purpose sorting
+
+Heap Sort
+Description: Sorts by using a binary heap.
+
+Complexity: O(n log n)
+
+Use: Accessing max/min values
+
+Searching Algorithms
+Linear Search
+Description: Checks each element.
+
+Complexity: O(n)
+
+Use: Small or unsorted datasets
+
+Binary Search
+Description: Divides sorted list in half.
+
+Complexity: O(log n)
+
+Use: Sorted data
+
+Hashing
+Description: Uses a hash function for fast lookups.
+
+Complexity: O(1) (avg)
+
+Use: Databases and caches
+
+DFS (Depth-First Search)
+Description: Explores deeply along branches.
+
+Complexity: O(V + E)
+
+Use: AI, network routing
+
+BFS (Breadth-First Search)
+Description: Explores all neighbors at current depth.
+
+Complexity: O(V + E)
+
+Use: Shortest path, GPS
+
 ## **•	Discuss the importance of graph algorithms with respect to spanning trees and shortest paths**
 ## **•	Discuss about the different studied algorithm design techniques.**
