@@ -21,6 +21,6 @@
 ### Course Instructor:
 &nbsp;&nbsp;&nbsp;&nbsp; Mallikarjun Akki
 
-<br></br>
+<br><br>
 [**Course Learning Reflections**](Course.md)
 
