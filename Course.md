@@ -76,6 +76,27 @@ Examples:
 
 ## **•	Take away from different design principles from chapter 2 (can use the notes provided)**
 
+### 1. Divide and Conquer
+Break the problem into smaller, independent subproblems.<br>
+Combine the solutions of subproblems to solve the original problem.<br>
+**Examples:** Merge Sort, Quick Sort.
+### 2. Greedy Algorithms
+Make the best possible choice at each step.<br>
+Works well for problems with **greedy-choice property** and **optimal substructure**.<br>
+**Examples:** Dijkstra’s Algorithm, Kruskal’s Algorithm.
+### 3. Dynamic Programming (DP)
+Solve overlapping subproblems and store results to avoid redundant work.<br>
+Efficiently reduces exponential problems to polynomial time.<br>
+**Examples:** Warshall's Algorithm.
+### 4. Backtracking
+Explore all possibilities, and backtrack if a solution doesn’t work.<br>
+Often used for constraint satisfaction problems.<br>
+**Examples:** N-Queens Problem.
+### 5. Transform and Conquer
+Simplify the problem or its representation to solve it more easily.<br>
+Highlights the importance of preprocessing.<br>
+**Examples:** AVL Tree.
+
 ## **•	The hierarchical data and how different tree data structures solve and optimize over the problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)**
 <table border="1">
   <tr>
