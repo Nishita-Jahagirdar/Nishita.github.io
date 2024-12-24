@@ -11,4 +11,4 @@ When road are not repaired, heavily damaged or high-traffic roads might be ignor
 **• Solution:**
 We can use **Merge Sort** to address this problem. The solution is to assess the severity of damage, traffic volume, and potential safety risks to prioritize repairs. Critical roads, such as those with heavy traffic or severe damage, should be addressed first. This ensures that limited resources are used effectively, reducing hazards, improving traffic flow, and lowering long-term repair costs.
 
-**• Code:**  [Merge Sort](meger_sort)
+**• Code:**  [Merge Sort](1_meger_sort.cpp)
