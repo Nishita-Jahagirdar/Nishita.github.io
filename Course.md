@@ -86,20 +86,6 @@ Examples:
     <th>Use Case</th>
   </tr>
   <tr>
-    <td>General Tree</td>
-    <td>Flexibility</td>
-    <td>Simple representation</td>
-    <td>Not efficient for specific tasks</td>
-    <td>Organization charts, file systems</td>
-  </tr>
-  <tr>
-    <td>Binary Tree</td>
-    <td>Basic hierarchical data</td>
-    <td>Easy to traverse</td>
-    <td>Unbalanced, inefficient</td>
-    <td>Expression parsing, decision trees</td>
-  </tr>
-  <tr>
     <td>Binary Search Tree (BST)</td>
     <td>Sorted data storage</td>
     <td>Fast lookups, inserts</td>
@@ -291,77 +277,76 @@ Examples:
 </table>
 
 ## **•	Deliberate on sorting and searching algorithms, the technique behind each and they connect to real world**
-Sorting Algorithms
-Bubble Sort
-Description: Swaps adjacent elements until sorted.
 
-Complexity: O(n²)
+### **Sorting Algorithms**
 
-Use: Small datasets
+**- Bubble Sort** <br>
+**Description:** Swaps adjacent elements until sorted. <br>
+**Complexity:** O(n²) <br>
+**Use:** Small datasets
 
-Insertion Sort
-Description: Builds the sorted list one element at a time.
+**- Insertion Sort** <br>
+**Description:** Builds the sorted list one element at a time. <br>
+**Complexity:** O(n²) <br>
+**Use:** Nearly sorted datasets
 
-Complexity: O(n²)
+**- Selection Sort** <br>
+**Description:** Selects the smallest element from the unsorted part and places it in the sorted part. <br>
+**Complexity:** O(n²) <br>
+**Use:** Small datasets with minimal memory swaps needed
 
-Use: Nearly sorted datasets
+**- Merge Sort** <br>
+**Description:** Divides and merges sublists. <br>
+**Complexity:** O(n log n) <br>
+**Use:** Large-scale data
 
-Merge Sort
-Description: Divides and merges sublists.
+**- Quick Sort** <br>
+**Description:** Partitions around a pivot and sorts. <br>
+**Complexity:** O(n log n) (average) <br>
+**Use:** General-purpose sorting
 
-Complexity: O(n log n)
+**- Heap Sort** <br>
+**Description:** Sorts by using a binary heap. <br>
+**Complexity:** O(n log n) <br>
+**Use:** Accessing max/min values
 
-Use: Large-scale data
+### **Searching Algorithms**
 
-Quick Sort
-Description: Partitions around a pivot and sorts.
+**- Linear Search** <br>
+**Description:** Checks each element. <br>
+**Complexity:** O(n) <br>
+**Use:** Small or unsorted datasets
 
-Complexity: O(n log n) (average)
+**- Binary Search** <br>
+**Description:** Divides sorted list in half. <br>
+**Complexity:** O(log n) <br>
+**Use:** Sorted data
 
-Use: General-purpose sorting
+**- Hashing** <br>
+**Description:** Uses a hash function for fast lookups. <br>
+**Complexity:** O(1) (avg) <br>
+**Use:** Databases and caches
 
-Heap Sort
-Description: Sorts by using a binary heap.
+**- DFS (Depth-First Search)** <br>
+**Description:** Explores deeply along branches. <br>
+**Complexity:** O(V + E) <br>
+**Use:** AI, network routing
 
-Complexity: O(n log n)
-
-Use: Accessing max/min values
-
-Searching Algorithms
-Linear Search
-Description: Checks each element.
-
-Complexity: O(n)
-
-Use: Small or unsorted datasets
-
-Binary Search
-Description: Divides sorted list in half.
-
-Complexity: O(log n)
-
-Use: Sorted data
-
-Hashing
-Description: Uses a hash function for fast lookups.
-
-Complexity: O(1) (avg)
-
-Use: Databases and caches
-
-DFS (Depth-First Search)
-Description: Explores deeply along branches.
-
-Complexity: O(V + E)
-
-Use: AI, network routing
-
-BFS (Breadth-First Search)
-Description: Explores all neighbors at current depth.
-
-Complexity: O(V + E)
-
-Use: Shortest path, GPS
+**- BFS (Breadth-First Search)** <br>
+**Description:** Explores all neighbors at current depth. <br>
+**Complexity:** O(V + E) <br>
+**Use:** Shortest path, GPS
 
 ## **•	Discuss the importance of graph algorithms with respect to spanning trees and shortest paths**
+
+**- Spanning Trees:** Used to connect all nodes in a graph efficiently with minimal cost (e.g., in network design). Algorithms like Kruskal’s and Prim’s help find the Minimum Spanning Tree.<br>
+**- Shortest Paths:** Help find the quickest route between nodes (e.g., in GPS systems). Algorithms like Dijkstra’s and Bellman-Ford optimize navigation and network routing.
+
 ## **•	Discuss about the different studied algorithm design techniques.**
+
+**- Divide and Conquer:** Split problems into smaller parts, solve them, and combine (e.g., Merge Sort, Binary Search).<br>
+**- Dynamic Programming:** Solve overlapping subproblems and store results to avoid repetition (e.g., Knapsack, LCS).<br>
+**- Greedy:** Make locally optimal choices for a global solution (e.g., Kruskal’s, Huffman Encoding).<br>
+**- Backtracking:** Explore all possibilities and backtrack when constraints fail (e.g., N-Queens, Sudoku).<br>
+**- Branch and Bound:** Systematically explore solutions, pruning unviable paths (e.g., Traveling Salesman).<br>
+**- Randomized Algorithms:** Use random choices for simplicity and efficiency (e.g., Randomized Quick Sort).
