@@ -26,3 +26,15 @@
 
 **• Conclusion:**  
 &nbsp;&nbsp;&nbsp;&nbsp;Merge Sort was used to prioritize road repairs because it provides stable, efficient sorting with **O(n log n)** complexity. It ensures roads are ordered by severity, allowing for effective allocation of resources and timely repairs.
+
+## 2) Efficient Dispatch of Emergency Vehicles
+**• Problem:** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Delays in dispatching emergency vehicles occur when multiple incidents happen, causing inefficiencies.  
+
+**•  How It Causes Problems:** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Slower response times can worsen situations and increase risks.  
+
+**• Solution:** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Use a Min-Heap to prioritize incidents by distance or urgency, ensuring faster and more efficient responses.
+
+**• Code:** Min Heap
