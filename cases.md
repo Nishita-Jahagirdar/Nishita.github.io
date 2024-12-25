@@ -65,4 +65,23 @@
 **•  Solution:**  
 &nbsp;&nbsp;&nbsp;&nbsp; An AVL Tree sorts events by start time, ensuring efficient scheduling and conflict-free allocation of public spaces.
 
-**•  Code:** 
+**•  Code:** [AVL Tree](3_avl_tree.cpp)
+
+**•  Key Aspects of the Code:** 
+
+&nbsp;&nbsp;&nbsp;&nbsp; **- Dynamic Scheduling:** Events can be added dynamically, ensuring real-time scheduling adjustments. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; **- Conflict Detection:** Overlapping events are detected and prevented to avoid scheduling conflicts. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; **- Balanced Tree Structure:** The AVL Tree ensures all events are balanced, enabling efficient insertion, deletion, and retrieval operations. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; **- Sorted Order of Events:** Events are automatically stored in sorted order of their start times, making it easy to visualize and manage the schedule. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; **- Scalability:** The AVL Tree structure allows for efficient handling of a large number of events with minimal performance degradation.  <br>
+&nbsp;&nbsp;&nbsp;&nbsp; **- User Input Integration:** The program takes event details from the user, making it interactive and adaptable to various use cases.
+
+**•  Time Complexity:** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; **- Best Case:** O(logn) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; **- Average Case:** O(logn) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; **- Worst Case:** O(logn)
+
+**•  Conclusion:**  
+&nbsp;&nbsp;&nbsp;&nbsp; AVL Tree is ideal for event scheduling because it maintains a balanced structure, ensuring efficient operations like insertion and search. Its ability to automatically sort events by start time and prevent conflicts makes it a reliable choice for managing schedules in dynamic environments.
+
+ ## 4) Sorting building height for skyline analysis
