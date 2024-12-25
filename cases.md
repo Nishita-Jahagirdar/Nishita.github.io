@@ -37,4 +37,4 @@
 **• Solution:** <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Use a Min-Heap to prioritize incidents by distance or urgency, ensuring faster and more efficient responses.
 
-**• Code:** Min Heap
+**• Code:** [Min Heap](min_heap)
