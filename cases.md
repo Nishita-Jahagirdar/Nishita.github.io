@@ -14,10 +14,17 @@ We can use **Merge Sort** to address this problem. The solution is to assess the
 **Code:** [Merge Sort](1_merge_sort.cpp)
 
 **Key Aspects:**  
-- **User Input:** The program prompts the user to enter the number of roads and their details (name and severity of damage).  
-- **Road Structure:** A Road struct holds the road's name and severity.  
-- **Priority Queue:** Roads are stored in a priority queue, which automatically sorts them based on severity (higher severity roads come first).  
-- **Sorting & Output:** The roads are processed in priority order, with the most critical roads being "repaired" (printed) first.
+- **User Input:**  
+  The program prompts the user to enter the number of roads and their details (name and severity of damage).  
+
+- **Road Structure:**  
+  A Road struct holds the road's name and severity.  
+
+- **Priority Queue:**  
+  Roads are stored in a priority queue, which automatically sorts them based on severity (higher severity roads come first).  
+
+- **Sorting & Output:**  
+  The roads are processed in priority order, with the most critical roads being "repaired" (printed) first.
 
 **Time Complexity:**  
 - **Best Case:** O(n log n)  
@@ -43,10 +50,17 @@ Use a **Min-Heap** to prioritize incidents by distance or urgency, ensuring fast
 **Code:** [Min Heap](min_heap.cpp)
 
 **Key Aspects:**  
-- **Incident Struct:** Represents each emergency with its distance and description.  
-- **Min-Heap (Priority Queue):** Ensures incidents are sorted by shortest distance first, using `greater<Incident>`.  
-- **Efficient Dispatch:** Closest incidents are processed and dispatched in priority order.  
-- **User Input:** Allows dynamic input of incidents, including distance and description.  
+- **Incident Struct:**  
+  Represents each emergency with its distance and description.  
+
+- **Min-Heap (Priority Queue):**  
+  Ensures incidents are sorted by shortest distance first, using `greater<Incident>`.  
+
+- **Efficient Dispatch:**  
+  Closest incidents are processed and dispatched in priority order.  
+
+- **User Input:**  
+  Allows dynamic input of incidents, including distance and description.
 
 **Time Complexity:**  
 - **Best Case:** O(n log n)  
@@ -72,12 +86,23 @@ An **AVL Tree** sorts events by start time, ensuring efficient scheduling and co
 **Code:** [AVL Tree](3_avl_tree.cpp)
 
 **Key Aspects:**  
-- **Dynamic Scheduling:** Events can be added dynamically, ensuring real-time scheduling adjustments.  
-- **Conflict Detection:** Overlapping events are detected and prevented to avoid scheduling conflicts.  
-- **Balanced Tree Structure:** The AVL Tree ensures all events are balanced, enabling efficient insertion, deletion, and retrieval operations.  
-- **Sorted Order of Events:** Events are automatically stored in sorted order of their start times, making it easy to visualize and manage the schedule.  
-- **Scalability:** The AVL Tree structure allows for efficient handling of a large number of events with minimal performance degradation.  
-- **User Input Integration:** The program takes event details from the user, making it interactive and adaptable to various use cases.
+- **Dynamic Scheduling:**  
+  Events can be added dynamically, ensuring real-time scheduling adjustments.  
+
+- **Conflict Detection:**  
+  Overlapping events are detected and prevented to avoid scheduling conflicts.  
+
+- **Balanced Tree Structure:**  
+  The AVL Tree ensures all events are balanced, enabling efficient insertion, deletion, and retrieval operations.  
+
+- **Sorted Order of Events:**  
+  Events are automatically stored in sorted order of their start times, making it easy to visualize and manage the schedule.  
+
+- **Scalability:**  
+  The AVL Tree structure allows for efficient handling of a large number of events with minimal performance degradation.  
+
+- **User Input Integration:**  
+  The program takes event details from the user, making it interactive and adaptable to various use cases.
 
 **Time Complexity:**  
 - **Best Case:** O(log n)  
@@ -103,10 +128,17 @@ Use **Quick Sort** to sort building heights efficiently by their positions and h
 **Code:** [Quick Sort](4_quick_sort.cpp)
 
 **Key Aspects:**  
-- **Building Struct:** Each building has a position, height, and identifier for tracking.  
-- **Sorting by Height and Position:** Quick Sort ensures buildings are ordered by their position and height in descending order, which is crucial for skyline analysis.  
-- **Dynamic Input:** The program allows user input for building details, making it adaptable for various skyline configurations.  
-- **Efficient Visualization:** Sorted data helps in creating an accurate skyline representation, reducing computation during analysis.
+- **Building Struct:**  
+  Each building has a position, height, and identifier for tracking.  
+
+- **Sorting by Height and Position:**  
+  Quick Sort ensures buildings are ordered by their position and height in descending order, which is crucial for skyline analysis.  
+
+- **Dynamic Input:**  
+  The program allows user input for building details, making it adaptable for various skyline configurations.  
+
+- **Efficient Visualization:**  
+  Sorted data helps in creating an accurate skyline representation, reducing computation during analysis.
 
 **Time Complexity:**  
 - **Best Case:** O(n log n)  
