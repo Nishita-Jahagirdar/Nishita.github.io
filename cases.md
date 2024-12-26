@@ -148,4 +148,39 @@ Use **Quick Sort** to sort building heights efficiently by their positions and h
 **Conclusion:**  
 Quick Sort is an optimal choice for sorting building heights because of its efficiency and ability to handle large datasets effectively. It simplifies the process of identifying the skyline by ensuring accurate order of buildings, improving clarity and visualization in urban studies.
 
-## 5. tourist route planning
+## 5. Tourist Route Planning
+
+**Problem:**  
+Planning the most efficient route for tourists to explore multiple destinations in a city or region can be challenging, especially when considering constraints like time, distance, or specific preferences.
+
+**How It Causes Problems:**  
+Without an optimized route, tourists might waste time traveling back and forth between locations, miss important spots, or face unnecessary delays, reducing the overall experience.
+
+**Solution:**  
+Use **Breadth-First Search (BFS)** to determine the shortest path or most efficient sequence to visit destinations. BFS can help explore all possible routes systematically and identify the optimal path based on distance or travel time.
+
+**Code:** [BFS](5_bfs.cpp)
+
+**Key Aspects:**  
+- **Graph Representation:**  
+  The city is represented as a graph where nodes are destinations, and edges are the connections (roads or paths) between them.
+
+- **BFS Algorithm:**  
+  BFS traverses the graph layer by layer, ensuring the shortest path to each destination is found.
+
+- **User Input:**  
+  Allows input for the number of destinations, connections, and preferences (e.g., start and end points).
+
+- **Shortest Path Calculation:**  
+  Computes the shortest route between the starting point and other destinations based on edge weights (distances or travel times).
+
+- **Interactive Planning:**  
+  The program adapts to user preferences, providing real-time route updates based on changing conditions or new inputs.
+
+**Time Complexity:**  
+- **Best Case:** O(V + E) (where V is the number of vertices and E is the number of edges)  
+- **Average Case:** O(V + E)  
+- **Worst Case:** O(V + E)
+
+**Conclusion:**  
+BFS is ideal for tourist route planning because it ensures an efficient exploration of all possible paths, making it easy to identify the shortest or most optimal route. This approach enhances the travel experience by reducing time and effort while ensuring all key destinations are covered.
