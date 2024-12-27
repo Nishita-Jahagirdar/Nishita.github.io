@@ -41,6 +41,6 @@ I'm Nishita P Jahagirdar
 
 # [*Business Cases*](cases.md)
 
-# [*Course Project*]
+# [*Course Project*](coursepro.md)
 
 > "Don’t read success stories, you will only get a message. Read failure stories, you will get some ideas to get success." – Dr. A.P.J. Abdul Kalam
