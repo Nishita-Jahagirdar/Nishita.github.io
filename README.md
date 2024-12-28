@@ -43,6 +43,6 @@ I'm Nishita P Jahagirdar
 
 # [*Course Project*](coursepro.md)
 
-# [**Merged Code**](mergedcode.cpp)
+# [*Merged Cod*](mergedcode.cpp)
 
 > "Don’t read success stories, you will only get a message. Read failure stories, you will get some ideas to get success." – Dr. A.P.J. Abdul Kalam
