@@ -1,54 +1,72 @@
-#include <iostream>
-#include <vector>
-#include <queue>
-#include <climits>
+#include<iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
 
-typedef pair<int, int> Edge; 
-
-void primMST(vector<vector<Edge>>& graph, int start) 
+void primsAlgorithm(int V, vector<pair<int, int>> adj[])
 {
-    int n = graph.size();
-    vector<bool> visited(n, false);
-    priority_queue<Edge, vector<Edge>, greater<Edge>> pq;
+    priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>> pq;
+    vector<int>parent(V,-1);
+    vector<int>key(V,INT_MAX);
+    vector<bool>inmst(V,false);
 
-    pq.push({0, start});
-    int totalCost = 0;
+    int start = 0;
+    key[start] = 0;
+    pq.push({0,start});
 
-    while (!pq.empty()) {
-        int cost = pq.top().first;
-        int node = pq.top().second;
+    while(!pq.empty()) {
+        int u=pq.top().second;
         pq.pop();
 
-        if (visited[node]) continue;
+        inmst[u] = true;
 
-        visited[node] = true;
-        totalCost += cost;
-        cout << "Adding node " << node << " with cost " << cost << endl;
+        for(auto it:adj[u]) {
+            int v=it.first;
+            int wt=it.second;
 
-        for (auto& neighbor : graph[node]) {
-            if (!visited[neighbor.second]) {
-                pq.push(neighbor);
+            if(!inmst[v] && wt<key[v]) {
+                parent[v]=u;
+                key[v]=wt;
+                pq.push({key[v],v});
             }
         }
     }
 
-    cout << "Total cost of MST: " << totalCost << endl;
+    cout << "Network of Evacuation Zones and shelters : \n";
+    int s=0;
+
+    for(int i=1; i<V; i++) {
+        cout << parent[i] << " - " << i << " : " << key[i] << endl;
+        s+=key[i];
+    }
+    cout << "Total cost = " << s << endl;
 }
 
-int main() 
+int main()
 {
-    int n = 4;
-    vector<vector<Edge>> graph(n);
+    int V = 5;
+    vector<pair<int, int>> adj[V];
 
-    // Graph as adjacency list
-    graph[0] = {{1, 1}, {4, 3}};
-    graph[1] = {{1, 0}, {2, 2}, {3, 3}};
-    graph[2] = {{2, 1}, {5, 3}};
-    graph[3] = {{4, 0}, {3, 1}, {5, 2}};
+    // Graph edges (u, v, weight)
+    adj[0].push_back({1, 2});
+    adj[1].push_back({0, 2});
 
-    cout << "Prim's MST starting from node 0:\n";
-    primMST(graph, 0);
+    adj[0].push_back({3, 6});
+    adj[3].push_back({0, 6});
+
+    adj[1].push_back({2, 3});
+    adj[2].push_back({1, 3});
+
+    adj[1].push_back({3, 8});
+    adj[3].push_back({1, 8});
+
+    adj[1].push_back({4, 5});
+    adj[4].push_back({1, 5});
+
+    adj[2].push_back({4, 7});
+    adj[4].push_back({2, 7});
+
+    primsAlgorithm(V, adj);
 
     return 0;
 }
